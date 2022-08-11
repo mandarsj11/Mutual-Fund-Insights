@@ -17,19 +17,468 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedcolumns/4.1.0/css/fixedColumns.dataTables.min.css"><!-- for table style -->
 
 <style>
-    
+
 </style>
 </head>
 <body>
 <div class="container">
     <div class="row">
         <div class="col-lg-12 col-sm-12">
-            <h2>Custom reports to get insights into an interesting world of Mutual Funds</h2>
-            <h3>Mutual Fund returns over Pre covid and post covid period</h3>
-            <h3>Pre Covid benchmark date - 31 Dec 2019</h3>
-            <h3>Post Covid benchmark date - 29 Jul 2022</h3>
-
-            <img src="static/Images/Pre-Post_covid_MF_Performance.png" style="object-fit: contain" alt="Fix the image">
+            <h2>Mutual Fund returns over Pre covid and post covid period</h2>
+            <h5>Pre Covid benchmark date - 31 Dec 2019</h5>
+            <h5>Post Covid benchmark date - 29 Jul 2022</h5>
+            <h7>(Mutual fund sample - typically recommended scheme names we see all around)</h7>
+            <table id="data" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <td>Category</td>
+                        <td>MF_Scheme</td>
+                        <td>date</td>
+                        <td>NAV</td>
+                        <td>Absolute return</td>
+                        <td>XIRR</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr >
+                        <td >Small Cap Fund</td>
+                        <td >Kotak-Small Cap Fund - Growth - Direct</td>
+                        <td >2022-Jul-29</td>
+                        <td >179.374</td>
+                        <td >55.61%</td>
+                        <td >37.02%</td>
+                       </tr>
+                       <tr >
+                        <td >Small Cap Fund</td>
+                        <td >Nippon India Small Cap Fund - Direct Plan
+                        Growth Plan - Growth Option</td>
+                        <td >2022-Jul-29</td>
+                        <td >93.1519</td>
+                        <td >55.52%</td>
+                        <td >36.93%</td>
+                       </tr>
+                       <tr >
+                        <td >Small Cap Fund</td>
+                        <td >L&amp;T Emerging Businesses Fund - Direct Plan
+                        - Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >47.956</td>
+                        <td >50.15%</td>
+                        <td >31.00%</td>
+                       </tr>
+                       <tr >
+                        <td >Small Cap Fund</td>
+                        <td >SBI Small Cap Fund - Direct Plan - Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >115.8262</td>
+                        <td >50.09%</td>
+                        <td >30.94%</td>
+                       </tr>
+                       <tr >
+                        <td >Small Cap Fund</td>
+                        <td >HDFC Small Cap Fund - Growth Option - Direct
+                        Plan</td>
+                        <td >2022-Jul-29</td>
+                        <td >78.532</td>
+                        <td >47.12%</td>
+                        <td >28.04%</td>
+                       </tr>
+                       <tr >
+                        <td >Small Cap Fund</td>
+                        <td >Axis Small Cap Fund - Regular Plan - Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >59.93</td>
+                        <td >46.44%</td>
+                        <td >27.40%</td>
+                       </tr>
+                       <tr >
+                        <td >Mid Cap Fund</td>
+                        <td >Kotak Emerging Equity Scheme - Growth - Direct</td>
+                        <td >2022-Jul-29</td>
+                        <td >81.645</td>
+                        <td >46.30%</td>
+                        <td >27.27%</td>
+                       </tr>
+                       <tr >
+                        <td >Value Fund</td>
+                        <td >ICICI Prudential Value Discovery Fund - Direct
+                        Plan - Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >275.44</td>
+                        <td >44.99%</td>
+                        <td >26.09%</td>
+                       </tr>
+                       <tr >
+                        <td >Flexi Cap Fund</td>
+                        <td >Parag Parikh Flexi Cap Fund - Direct Plan -
+                        Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >49.9775</td>
+                        <td >44.48%</td>
+                        <td >25.64%</td>
+                       </tr>
+                       <tr >
+                        <td >Small Cap Fund</td>
+                        <td >Franklin India Smaller Companies Fund-Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >87.6844</td>
+                        <td >43.15%</td>
+                        <td >24.49%</td>
+                       </tr>
+                       <tr >
+                        <td >Mid Cap Fund</td>
+                        <td >Motilal Oswal Midcap 30 Fund (MOF30)-Regular
+                        Plan-Growth Option</td>
+                        <td >2022-Jul-29</td>
+                        <td >46.9443</td>
+                        <td >42.89%</td>
+                        <td >24.27%</td>
+                       </tr>
+                       <tr >
+                        <td >Mid Cap Fund</td>
+                        <td >Tata Mid Cap Growth Fund - Direct Plan- Growth
+                        Option</td>
+                        <td >2022-Jul-29</td>
+                        <td >261.5639</td>
+                        <td >42.65%</td>
+                        <td >24.07%</td>
+                       </tr>
+                       <tr >
+                        <td >Large &amp;
+                        Mid Cap Fund</td>
+                        <td >Axis Growth Opportunities Fund - Direct Plan -
+                        Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >21.08</td>
+                        <td >42.41%</td>
+                        <td >23.87%</td>
+                       </tr>
+                       <tr >
+                        <td >Mid Cap Fund</td>
+                        <td >HDFC Mid-Cap Opportunities Fund - Growth Plan</td>
+                        <td >2022-Jul-29</td>
+                        <td >93.037</td>
+                        <td >42.39%</td>
+                        <td >23.85%</td>
+                       </tr>
+                       <tr >
+                        <td >Mid Cap Fund</td>
+                        <td >Axis Midcap Fund - Direct Plan - Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >74.68</td>
+                        <td >42.18%</td>
+                        <td >23.68%</td>
+                       </tr>
+                       <tr >
+                        <td >Large &amp;
+                        Mid Cap Fund</td>
+                        <td >Mirae Asset Emerging Bluechip Fund - Regular
+                        Plan - Growth Option</td>
+                        <td >2022-Jul-29</td>
+                        <td >94.351</td>
+                        <td >38.89%</td>
+                        <td >21.05%</td>
+                       </tr>
+                       <tr >
+                        <td >Aggressive
+                        Hybrid Fund</td>
+                        <td >ICICI Prudential Equity &amp; Debt Fund -
+                        Direct Plan - Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >246</td>
+                        <td >38.76%</td>
+                        <td >20.95%</td>
+                       </tr>
+                       <tr >
+                        <td >Flexi Cap Fund</td>
+                        <td >CANARA ROBECO FLEXICAP FUND - DIRECT PLAN -
+                        GROWTH OPTION</td>
+                        <td >2022-Jul-29</td>
+                        <td >235.67</td>
+                        <td >37.23%</td>
+                        <td >19.80%</td>
+                       </tr>
+                       <tr >
+                        <td >Flexi Cap Fund</td>
+                        <td >Franklin India Flexi Cap Fund - Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >934.6871</td>
+                        <td >36.80%</td>
+                        <td >19.48%</td>
+                       </tr>
+                       <tr >
+                        <td >Focused Fund</td>
+                        <td >Franklin India Focused Equity Fund - Growth
+                        Plan</td>
+                        <td >2022-Jul-29</td>
+                        <td >66.0228</td>
+                        <td >36.09%</td>
+                        <td >18.96%</td>
+                       </tr>
+                       <tr >
+                        <td >Flexi Cap Fund</td>
+                        <td >HDFC Flexi Cap Fund - Growth Plan</td>
+                        <td >2022-Jul-29</td>
+                        <td >1047.592</td>
+                        <td >35.79%</td>
+                        <td >18.75%</td>
+                       </tr>
+                       <tr >
+                        <td >Large &amp;
+                        Mid Cap Fund</td>
+                        <td >Kotak Equity Opportunities Fund - Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >196.661</td>
+                        <td >34.96%</td>
+                        <td >18.16%</td>
+                       </tr>
+                       <tr >
+                        <td >Large Cap Fund</td>
+                        <td >CANARA ROBECO BLUE CHIP EQUITY FUND - DIRECT
+                        PLAN - GROWTH OPTION</td>
+                        <td >2022-Jul-29</td>
+                        <td >44.61</td>
+                        <td >34.79%</td>
+                        <td >18.04%</td>
+                       </tr>
+                       <tr >
+                        <td >Mid Cap Fund</td>
+                        <td >DSP Midcap Fund - Direct Plan - Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >92.534</td>
+                        <td >34.65%</td>
+                        <td >17.94%</td>
+                       </tr>
+                       <tr >
+                        <td >Flexi Cap Fund</td>
+                        <td >JM Flexicap Fund (Direct) - Growth Option</td>
+                        <td >2022-Jul-29</td>
+                        <td >56.9605</td>
+                        <td >34.02%</td>
+                        <td >17.50%</td>
+                       </tr>
+                       <tr >
+                        <td >Large &amp;
+                        Mid Cap Fund</td>
+                        <td >Tata Large &amp; MId Cap Fund -Direct Plan-
+                        Growth Option</td>
+                        <td >2022-Jul-29</td>
+                        <td >361.362</td>
+                        <td >33.92%</td>
+                        <td >17.43%</td>
+                       </tr>
+                       <tr >
+                        <td >Focused Fund</td>
+                        <td >SBI FOCUSED EQUITY FUND - DIRECT PLAN -GROWTH</td>
+                        <td >2022-Jul-29</td>
+                        <td >245.255</td>
+                        <td >33.39%</td>
+                        <td >17.07%</td>
+                       </tr>
+                       <tr >
+                        <td >Children’s
+                        Fund</td>
+                        <td >HDFC Childrens Gift Fund - Growth Plan</td>
+                        <td >2022-Jul-29</td>
+                        <td >186.941</td>
+                        <td >33.31%</td>
+                        <td >17.02%</td>
+                       </tr>
+                       <tr >
+                        <td >Large &amp;
+                        Mid Cap Fund</td>
+                        <td >Sundaram Large and Midcap Fund Direct Plan -
+                        Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >57.7828</td>
+                        <td >32.93%</td>
+                        <td >16.76%</td>
+                       </tr>
+                       <tr >
+                        <td >Large &amp;
+                        Mid Cap Fund</td>
+                        <td >IDFC Core Equity Fund - Regular Plan - Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >68.13</td>
+                        <td >32.83%</td>
+                        <td >16.69%</td>
+                       </tr>
+                       <tr >
+                        <td >Large Cap Fund</td>
+                        <td >SBI BLUE CHIP FUND-DIRECT PLAN -GROWTH</td>
+                        <td >2022-Jul-29</td>
+                        <td >65.5294</td>
+                        <td >32.50%</td>
+                        <td >16.47%</td>
+                       </tr>
+                       <tr >
+                        <td >Flexi Cap Fund</td>
+                        <td >SBI Flexicap Fund - DIRECT PLAN - Growth
+                        Option</td>
+                        <td >2022-Jul-29</td>
+                        <td >80.2788</td>
+                        <td >32.40%</td>
+                        <td >16.40%</td>
+                       </tr>
+                       <tr >
+                        <td >Multi Cap Fund</td>
+                        <td >ICICI Prudential Multicap Fund - Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >441.58</td>
+                        <td >32.20%</td>
+                        <td >16.27%</td>
+                       </tr>
+                       <tr >
+                        <td >Aggressive Hybrid Fund</td>
+                        <td >HDFC Hybrid Equity Fund - Growth Option - Direct Plan</td>
+                        <td >2022-Jul-29</td>
+                        <td >84.755</td>
+                        <td >31.79%</td>
+                        <td >16.00%</td>
+                       </tr>
+                       <tr >
+                        <td >Aggressive Hybrid Fund</td>
+                        <td >Mirae Asset Hybrid-Equity Fund -Direct Plan-Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >24.338</td>
+                        <td >30.40%</td>
+                        <td >15.09%</td>
+                       </tr>
+                       <tr >
+                        <td >Large Cap Fund</td>
+                        <td >Aditya Birla Sun Life Frontline Equity
+                        Fund-Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >333.89</td>
+                        <td >30.29%</td>
+                        <td >15.02%</td>
+                       </tr>
+                       <tr >
+                        <td >Large &amp;Mid Cap Fund</td>
+                        <td >Invesco India Growth Opportunities Fund - Direct Plan - Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >57.3</td>
+                        <td >29.95%</td>
+                        <td >14.80%</td>
+                       </tr>
+                       <tr >
+                        <td >Large Cap Fund</td>
+                        <td >Mirae Asset Large Cap Fund - Growth Plan</td>
+                        <td >2022-Jul-29</td>
+                        <td >76.699</td>
+                        <td >29.24%</td>
+                        <td >14.36%</td>
+                       </tr>
+                       <tr >
+                        <td >Flexi Cap Fund</td>
+                        <td >Kotak Flexicap Fund - Growth - Direct</td>
+                        <td >2022-Jul-29</td>
+                        <td >56.532</td>
+                        <td >29.22%</td>
+                        <td >14.35%</td>
+                       </tr>
+                       <tr >
+                        <td >Aggressive Hybrid Fund</td>
+                        <td >SBI EQUITY HYBRID FUND - DIRECT PLAN - Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >217.672</td>
+                        <td >28.84%</td>
+                        <td >14.11%</td>
+                       </tr>
+                       <tr >
+                        <td >Large Cap Fund</td>
+                        <td >HDFC Top 100 Fund - Growth Option - Regular
+                        Plan</td>
+                        <td >2022-Jul-29</td>
+                        <td >701.737</td>
+                        <td >28.72%</td>
+                        <td >14.03%</td>
+                       </tr>
+                       <tr >
+                        <td >Focused Fund</td>
+                        <td >Axis Focused 25 Fund - Direct Plan - Growth
+                        Option</td>
+                        <td >2022-Jul-29</td>
+                        <td >45.92</td>
+                        <td >27.07%</td>
+                        <td >13.02%</td>
+                       </tr>
+                       <tr >
+                        <td >Focused Fund</td>
+                        <td >Motilal Oswal Focused 25 Fund (MOF25)- Direct
+                        Plan Growth Option</td>
+                        <td >2022-Jul-29</td>
+                        <td >35.9617</td>
+                        <td >26.19%</td>
+                        <td >12.50%</td>
+                       </tr>
+                       <tr >
+                        <td >Large Cap Fund</td>
+                        <td >Axis Bluechip Fund - Regular Plan - Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >43.17</td>
+                        <td >25.76%</td>
+                        <td >12.25%</td>
+                       </tr>
+                       <tr >
+                        <td >Children’s
+                        Fund</td>
+                        <td >Axis Children's Gift Fund - Lock in - Regular
+                        Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >19.3244</td>
+                        <td >25.68%</td>
+                        <td >12.20%</td>
+                       </tr>
+                       <tr >
+                        <td >Aggressive
+                        Hybrid Fund</td>
+                        <td >Aditya Birla Sun Life Equity Hybrid'95 Fund -
+                        Regular Plan-Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >1034.06</td>
+                        <td >25.62%</td>
+                        <td >12.16%</td>
+                       </tr>
+                       <tr >
+                        <td >ELSS</td>
+                        <td >Axis Long Term Equity Fund - Regular Plan -
+                        Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >66.1057</td>
+                        <td >25.48%</td>
+                        <td >12.09%</td>
+                       </tr>
+                       <tr >
+                        <td >Aggressive
+                        Hybrid Fund</td>
+                        <td >L&amp;T Hybrid Equity Fund- Regular Plan -
+                        Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >35.556</td>
+                        <td >23.66%</td>
+                        <td >11.04%</td>
+                       </tr>
+                       <tr >
+                        <td >Aggressive
+                        Hybrid Fund</td>
+                        <td >LIC MF Equity Hybrid Fund-Direct Plan-Growth</td>
+                        <td >2022-Jul-29</td>
+                        <td >146.8375</td>
+                        <td >19.99%</td>
+                        <td >9.04%</td>
+                       </tr>
+                       <tr >
+                        <td >Flexi Cap Fund</td>
+                        <td >Motilal Oswal Flexi Cap Fund Regular
+                        Plan-Growth Option</td>
+                        <td >2022-Jul-29</td>
+                        <td >31.9895</td>
+                        <td >15.21%</td>
+                        <td >6.61%</td>
+                       </tr>
+                </tbody>
+            </table>                    
         </div> 
     </div>      
         
@@ -38,7 +487,7 @@
     <div class="row">
         <div class="col-lg-9 col-sm-12">
             <footer>
-                <p>Contact - Mandar Joshi, 0091-9637527026, mandarsj11@gmail.com<br>
+                <p>Contact - Mandar Joshi, mandarsj11@gmail.com<br>
                 Copy Right - All information on this site is for investor awareness purpose and not meant as an Investment advise. This information is copyrighted and may not be used without permission.</p>
             </footer>    
         </div>
@@ -75,7 +524,8 @@
         scrollX: true,
         fixedColumns:   {
             left: 1
-        }
+        },
+        order: [[5, 'desc']],      
       });
     });
 </script>
